@@ -1,0 +1,2 @@
+json_key_file("/home/amanda/Projects/Capital\ Finanças/flutter_boilerplate/pc-api-5740739126416902015-125-c149b531c103.json") # Path to the json secret file - Follow https://docs.fastlane.tools/actions/supply/#setup to get one
+package_name("com.amanda.boilerplate") # e.g. com.krausefx.app
