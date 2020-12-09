@@ -21,9 +21,9 @@ or alternatively using `brew install fastlane`
 fastlane android test
 ```
 Runs all the tests
-### android beta
+### android internal
 ```
-fastlane android beta
+fastlane android internal
 ```
 Deploy a new beta build to Google Play
 

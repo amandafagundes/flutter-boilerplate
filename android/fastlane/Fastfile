@@ -23,7 +23,7 @@ platform :android do
   end
 
   desc "Deploy a new beta build to Google Play"
-  lane :beta do
+  lane :internal do
     build_number = number_of_commits()
 
     # Go to parent directory
@@ -36,7 +36,7 @@ platform :android do
       sh("flutter", "build", "appbundle", "--build-number=#{build_number}")
     end
 
-    upload_to_play_store(track: 'beta', aab: '../build/app/outputs/bundle/release/app-release.aab')
+    upload_to_play_store(track: 'internal', aab: '../build/app/outputs/bundle/release/app-release.aab')
   end
 
   # desc "Deploy a new version to the Google Play"
